@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="arabic" dir="rtl">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Neon Admin Panel" />
+	<meta name="author" content="" />
+
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/font-icons/entypo/css/entypo.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/bootstrap.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/neon-core.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/neon-theme.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/neon-forms.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/neon-rtl.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/c3.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/custom.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/esraaStyle.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/madonaStyle.css">
+    
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.1/css/buttons.dataTables.min.css">
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/jquery-1.11.0.min.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/mainScript.js"></script>
+
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/jquery-ui.min.js"></script>
+
+<style>
+    
+@media print {
+    .sidebar-menu,.top-header,.btn-success,.bgcolor,.headertitle{
+        display:none
+    }
+}    
+    
+    
+</style>
+
+
+</head>
+
+<body class="page-body" data-url="http://neon.dev">
+
+	<div class="page-container right-sidebar">
+		<!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->
+
+		<div class="sidebar-menu">
+
+
+			<header class="logo-env">
+
+				<!-- logo -->
+				<div class="logo">
+					<a href="layout-right-sidebar.html">
+					<img src="http://173.212.198.28:8010/crm/design/assets/images/quantum logo-01.png" width="170px" height="100px" alt="" />
+				</a>
+				</div>
+
+				<!-- logo collapse icon -->
+
+				<div class="sidebar-collapse">
+					<a href="#" class="sidebar-collapse-icon with-animation">
+
+						<i class="entypo-menu"></i>
+					</a>
+				</div>
+				<div class="sidebar-mobile-menu visible-xs">
+					<a href="#" class="with-animation">
+					
+						<i class="entypo-menu"></i>
+					</a>
+				</div>
+
+			</header>
+
+
+			<ul id="main-menu" class="">
+
+				<li> <a href="التقويم.html"> 					<i class="entypo-calendar"></i> 					<span>التقويم</span> 				</a> </li>
+				<li class="opened active">
+					<a href="التنبيهات.html"> 					<i class="entypo-alert"></i> 					<span>تنبيهات</span> 					<span class="badge badge-secondary">8</span> 				</a>					</li>
+				<li> <a href="ui-panels.html"> 					<i class="entypo-newspaper"></i> 					<span>المهام</span> 				</a>
+					<ul>
+						<li id="opener"> <a href="#"> 							<i class="entypo-attach"></i> 							<span>رفع ملف</span> 						</a> </li>
+						<li> <a href="تعيين-مهام.html"> 							<span>تعيين مهام</span> 						</a> </li>
+						<div id="dialog" title="اضافة ملف">
+							<h5>تحميل ملف</h5>
+
+
+							<div class="modal-body">
+								<input type="file" class="form-control fileupload">
+							</div>
+						</div>
+					</ul>
+				</li>
+				<li> <a href="الموظفين.html"> 					<i class="entypo-users"></i> 					<span>موظفين</span> 				</a> </li>
+				<li> <a href="الصلاحيات.html"> 					<i class="entypo-users"></i> 					<span>المجموعات</span> 				</a> </li>
+				<li> <a href="العملاء.html"> 				<i class="entypo-users"></i> 					<span>عملاء</span> 				</a> </li>
+				<li> <a href="الرسائل.html"> 				<i class="entypo-comment"></i> 					<span>رسائل</span> 				</a> </li>
+				<li> <a href="الايميلات.html"> 					<i class="entypo-mail"></i> 					<span>ايميل</span> 				</a> </li>
+				<li> <a href="تعليمات.html "> 				 					<span>تعليمات</span> 					 				</a> </li>
+				<li> <a href="الشكاوى.html"> 					 					<span>شكاوي</span> 				</a> </li>
+				<li> <a href="#"> 				 					<span>الاعدادات</span> 				</a>
+					<ul>
+						<li> <a href="الحجوزات.html"> 							<i class="entypo-pencil"></i> 							<span>حجوزات</span> 						</a> </li>
+						<li> <a href="#"> 							<i class="entypo-database"></i> 							<span>قاعدة البيانات</span> 						</a> </li>
+						<li> <a href="تغير المحتوى.html"> 							<i class="entypo-database"></i> 							<span>تغير المحتوى</span> 						</a> </li>
+						<li> <a href="قاعدة البيانات.html"> 							<i class="entypo-book-open"></i> 							<span>بيانات الشركة</span> 						</a>							</li>
+					</ul>
+				</li>
+			</ul>
+
+
+		</div>
+
+
+		<div class="top-header">
+
+
+			<div class="col-md-4 col-sm-4 clearfix">
+
+
+				<div class="pull-left pull-right-xs pull-none-xsm headertitle ">
+					<h4>تفاصيل تقارير المشرفين</h4>
+				</div>
+
+			</div>
+			<div class="col-md-4 col-sm-4 clearfix hidden-xs time-date">
+				<span id="date_time"></span>
+				<script type="text/javascript">
+					window.onload = date_time('date_time');
+				</script>
+			</div>
+
+			<div class="col-md-4 col-sm-4 clearfix user-crm">
+
+				<ul class="user-info pull-right pull-none-xsm">
+
+					<!-- Profile Info -->
+					<li class="profile-info dropdown">
+						<!-- add class "pull-right" if you want to place this from right -->
+
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+
+
+   <span class="entypo-user">احمد محمود</span> 
+					
+				</a>
+
+						<ul class="dropdown-menu edropdown">
+
+							<!-- Reverse Caret -->
+							<li class="caret"></li>
+
+							<!-- Profile sub-links -->
+							<li>
+								<a href="بيانات_الموظف.html">
+							<i class="entypo-user"></i>
+							بيانات المستخدم
+						</a>
+							</li>
+
+							<li>
+								<a href="تعديل_البيانات.html">
+							<i class="entypo-mail"></i>
+							تعديل البيانات
+						</a>
+							</li>
+
+							<li>
+								<a href="extra-login.html">
+							<i class="entypo-calendar"></i>
+							خروج
+						</a>
+							</li>
+
+
+						</ul>
+					</li>
+				</ul>
+
+
+			</div>
+
+
+
+
+		</div>
+
+<div class="main-content">
+    <br><br>
+
+      <button class="btn btn-sm pull-right btn-success">طباعه هذه الصفحه</button>
+<br><br>
+    
+			
+			<div class="row">
+			<table id="myTable" class="table table-striped display  ">
+
+						<thead>
+							<tr  class="rowstyle">
+								<th></th>
+						
+								<th>الكود</th>
+								<th>اسم المشرف</th>
+								<th>اجمالي عدد المكالمات</th>
+								<th>عدد المكالمات المتابعه</th>
+								<th>عدد المكالمات قيد الحجز</th>
+                                <th>عدد المكالمات الغاء متابعه</th>
+							</tr>
+						</thead>
+						<tbody>
+                            
+							<tr ondblclick="customer()" class="rowstyle">
+									<td></td>
+										<td>0333</td>
+                                        
+										<td>مادونا</td>
+                                        
+                                        <td>1</td>
+                                        <td>33</td>
+                                        <td>40</td>
+                                        <td>7</td>
+							</tr>
+							
+						</tbody>
+					</table>    
+			</div>
+    <br> <br>
+			<div class="row">
+				<div class="col-sm-12">
+
+
+
+
+
+					<ul class="nav nav-tabs bordered">
+						<!-- available classes "bordered", "right-aligned" -->
+						<li class="active">
+					<a href="#home" data-toggle="tab">
+					<span class="visible-xs">الموظفين التابعين له</span>
+					<span class="hidden-xs">الموظفين التابعين له</span>
+				   </a>
+						</li>
+					
+					</ul>
+
+					<div class="tab-content">
+						<div class="tab-pane active" id="home">
+
+							<table id="myTable" class="table table-striped my_table">
+
+								<thead>
+
+							<tr>
+										<th></th>
+										<th>الكود</th>
+                                     
+										<th>الاسم</th>
+                                      
+                                        <th>اجمالي عدد المكالمات</th>
+                                        <th>عدد المكالمات المتابعه</th>
+                                        <th>عدد المكالمات قيد الحجز</th>
+                                        <th>عدد المكالمات الغاء متابعه</th>
+										
+
+
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td></td>
+										<td><a href="%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84-%D8%AA%D9%82%D8%A7%D8%B1%D9%8A%D8%B1-%D8%A7%D9%84%D9%85%D9%88%D8%B8%D9%81%D9%8A%D9%86.html" class="bgcolor">0111</a></td>
+                                       
+										<td>مادونا </td>
+                                        
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>5</td>
+                                        <td>4</td>
+								
+									</tr>
+									<tr>
+										<td></td>
+										<td><a href="%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84-%D8%AA%D9%82%D8%A7%D8%B1%D9%8A%D8%B1-%D8%A7%D9%84%D9%85%D9%88%D8%B8%D9%81%D9%8A%D9%86.html" class="bgcolor">0222</a></td>
+                                       
+										<td>مادونا</td>
+                                       
+                                        <td>6</td>
+                                        <td>7</td>
+                                        <td>7</td>
+                                        <td>8</td>
+									
+									</tr>
+														
+										
+											
+											
+											
+									
+								</tbody>
+							</table>
+						</div>
+                        
+                        
+
+					</div>
+
+
+
+
+
+				</div>
+
+
+			</div>
+
+<br> <br>
+    
+<div class="row">
+	
+	<div class="col-md-6">
+		
+		<div class="panel panel-danger" data-collapsed="0">
+			
+			<!-- panel head -->
+			<div class="panel-heading">
+				<div class="panel-title">اجمالي عدد المكالمات</div>
+				
+				<div class="panel-options">
+					
+					<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+					
+					<a href="#" data-rel="close"><i class="entypo-cancel"></i></a>
+				</div>
+			</div>
+			
+			<!-- panel body -->
+			<div class="panel-body">
+				
+				<p>20 مكالمه</p>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	<div class="col-md-6">
+		
+		<div class="panel panel-info" data-collapsed="0">
+			
+			<!-- panel head -->
+			<div class="panel-heading">
+				<div class="panel-title">اجمالي عدد المكالمات المتابعه</div>
+				
+				<div class="panel-options">
+					
+					<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+					
+					<a href="#" data-rel="close"><i class="entypo-cancel"></i></a>
+				</div>
+			</div>
+			
+			<!-- panel body -->
+			<div class="panel-body">
+				
+				<p>5 مكالمات</p>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+	
+</div>
+    
+<div class="row">
+	
+	<div class="col-md-6">
+		
+		<div class="panel panel-success" data-collapsed="0">
+			
+			<!-- panel head -->
+			<div class="panel-heading">
+				<div class="panel-title">اجمالي عدد مكالمات الغاء متابعه</div>
+				
+				<div class="panel-options">
+					
+					<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+					
+					<a href="#" data-rel="close"><i class="entypo-cancel"></i></a>
+				</div>
+			</div>
+			
+			<!-- panel body -->
+			<div class="panel-body">
+				
+				<p>5 مكالمات</p>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	<div class="col-md-6">
+		
+		<div class="panel panel-warning" data-collapsed="0">
+			
+			<!-- panel head -->
+			<div class="panel-heading">
+				<div class="panel-title">اجمالي عدد مكالمات قيد الحجز</div>
+				
+				<div class="panel-options">
+					
+					<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+				
+					<a href="#" data-rel="close"><i class="entypo-cancel"></i></a>
+				</div>
+			</div>
+			
+			<!-- panel body -->
+			<div class="panel-body">
+				
+				<p>10 مكالمات</p>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+	
+</div>
+
+
+
+		</div>
+
+
+
+	</div>
+
+
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/js/jvectormap/jquery-jvectormap-1.2.2.css">
+
+
+	<!-- Bottom Scripts -->
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/gsap/main-gsap.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/bootstrap.js"></script>
+
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/joinable.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/resizeable.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/neon-api.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/jvectormap/jquery-jvectormap-europe-merc-en.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/bootstrap-datepicker.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/raphael-min.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/morris.min.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/toastr.js"></script>
+
+	
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/neon-custom.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/neon-demo.js"></script>
+    
+         <script src=" https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="http://173.212.198.28:8010/crm/design/assets/js/jquery.dataTables.min (2).js"></script>
+<script src="http://173.212.198.28:8010/crm/design/assets/js/dataTables.buttons.min.js"></script>
+<script src="http://173.212.198.28:8010/crm/design/assets/js/buttons.flash.min.js"></script>
+<script src="http://173.212.198.28:8010/crm/design/assets/js/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/vfs_fonts.js"></script>
+<script src="http://173.212.198.28:8010/crm/design/assets/js/buttons.html5.min.js"></script>
+<script src="http://173.212.198.28:8010/crm/design/assets/js/buttons.print.min.js"></script>
+    
+<script>
+    
+    
+    	jQuery(document).ready(function ($) {
+	
+			
+		
+
+			$('.my_table').DataTable( {
+        	"paging": true,
+            "pagingType": "full_numbers",
+            "info": true,
+            "responsive": true,
+        
+
+        dom: 'Bfrtip',
+       
+                
+                
+                 buttons: [
+        {
+            extend: 'excel',
+            text: 'اكسيل'
+         
+        },
+                      {
+            extend: 'print',
+            text: 'طباعة'
+           
+        },
+                      {
+            extend: 'pdf',
+            text: 'ملف'
+           
+        }
+                     
+    ]
+         
+        
+    } );
+
+						$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+							$('#myTable:visible').each(function (e) {
+								//   alert('visible ' + $(this).attr('id'));
+								$(this).DataTable().columns.adjust().responsive.recalc();
+							});
+						});
+								$('table.table input[type=checkbox]').click(function () {
+    $(this).closest('tr').toggleClass("highlight", this.checked);
+});	
+
+
+		});
+    </script>
+
+<script>
+$(".btn-success").click(function () {
+    print()
+});
+</script>
+
+
+</body>
+
+</html>

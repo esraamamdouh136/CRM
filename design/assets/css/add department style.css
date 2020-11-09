@@ -1,0 +1,162 @@
+.label {
+    color: #fb8f38 !important;
+   
+}
+
+ .accordion {
+   background: transparent;
+    cursor: pointer;
+    padding: 18px;
+    width: 13%;
+    border: none;
+    text-align: right;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-bottom: 2px solid black;
+}
+
+/* .accordion:before , .accordion.active4::before{
+    content: "";
+    width: 46px;
+    border-top: 1px solid #777777;
+    background: black;
+    height: 2px;
+    position: absolute;
+    transition: all 1s ease-in-out ;
+
+}
+
+
+
+#div1 .accordion:before{
+    top: 24%;
+}
+#div1 .accordion:before{
+    top: 24%;
+}
+
+.active4:before{
+    top: 19%;
+} */
+
+
+
+
+#div1:hover .accordion:before , #div2:hover .accordion:before{
+  width:76px;
+}
+ul, ol {
+    margin-top: 16px;
+    margin-bottom: 27.5px;
+    list-style-type: none;
+    /* overflow: hidden; */
+}
+
+ul li {
+    margin-top: 20px; 
+}
+input{
+    color: black;
+}
+.accordion2 {
+        background-color: #303641;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: right;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+ /* .accordion:hover {
+    background-color: #33415a;
+} */
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-right: -18px;
+}
+.accordion4:after {
+    content: '\002B';
+    
+    color: #777;
+    font-weight: bold;
+    float: left;
+    margin-left: 5px;
+    float: right;
+    margin-left: 12px;
+}
+
+.active4:after {
+    content: "\2212";
+    
+}
+
+.panel {
+    padding: 0 18px;
+
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+
+}
+    
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+     text-align: center;
+}
+
+
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+  margin: auto;
+  display: block;
+   width: 150px;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+    
+}
+.panel ul{
+        font-size: 14px;
+    color: black;
+}
+.delete-elemnet{
+         margin-left: 12px; 
+    cursor: pointer;
+}
+.panel select{
+    padding: 3px;
+}
+
+.sub{
+     
+    padding: 21px 0;
+
+}
+.subb{
+    cursor: pointer;
+}

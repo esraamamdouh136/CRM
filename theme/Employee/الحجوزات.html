@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="arabic" dir="rtl">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Neon Admin Panel" />
+	<meta name="author" content="" />
+	
+	<title>الحجوزات</title>
+	
+
+	<link rel="stylesheet" href="assets/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css">
+	<link rel="stylesheet" href="assets/css/font-icons/entypo/css/entypo.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic">
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/neon-core.css">
+	<link rel="stylesheet" href="assets/css/neon-theme.css">
+	<link rel="stylesheet" href="assets/css/neon-forms.css">
+	<link rel="stylesheet" href="assets/css/neon-rtl.css">
+	<link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/esraaStyle.css">
+	<link rel="stylesheet" href="assets/css/madonaStyle.css"> 
+	<script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="assets/js/select2/select2-bootstrap.css">
+	<link rel="stylesheet" href="assets/js/select2/select2.css">
+	<link rel="stylesheet" href="assets/css/jquery.dataTables.min.css">
+    <script src="assets/js/select2/select2.min.js"></script>
+    
+<link rel="stylesheet" href="assets/js/selectboxit/jquery.selectBoxIt.css">
+	
+</head>
+    <style>
+.modal-backdrop.in {
+    z-index: -1 !important;
+        }
+
+
+</style>
+<body class="page-body" data-url="http://neon.dev">
+
+<div class="page-container right-sidebar"><!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->	
+    
+	
+	<div class="sidebar-menu">
+		
+			
+		<header class="logo-env">
+			
+			<!-- logo -->
+			<div class="logo">
+				<a href="layout-right-sidebar.html">
+					<img src="assets/images/logo.png" width="120" alt="" />
+				</a>
+			</div>
+			
+						<!-- logo collapse icon -->
+						
+			<div class="sidebar-collapse">
+				<a href="#" class="sidebar-collapse-icon with-animation"><!-- add class "with-animation" if you want sidebar to have animation during expanding/collapsing transition -->
+					<i class="entypo-menu"></i>
+				</a>
+			</div>
+			
+									
+			
+			<!-- open/close menu icon (do not remove if you want to enable menu on mobile devices) -->
+			<div class="sidebar-mobile-menu visible-xs">
+				<a href="#" class="with-animation"><!-- add class "with-animation" to support animation -->
+					<i class="entypo-menu"></i>
+				</a>
+			</div>
+			
+		</header>
+				
+				
+		<ul id="main-menu" class=""> 			<!-- add class "multiple-expanded" to allow multiple submenus to open --> 			<!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" --> 			<!-- Search Bar --> 		 		
+            <li> 
+               <a href="التقويم.html">
+               <i class="entypo-calendar"></i> 
+               <span>التقويم</span> 
+                </a>			 		
+            </li> 
+            <li>
+                <a href="اعادة-تعيين-مهام.html"> 
+                    <i class="entypo-newspaper"></i>
+                    <span>المهام</span> 
+                </a> 
+               
+            </li> 
+            <li class="opened active"> 
+               <a href="التنبيهات.html"> 
+               <i class="entypo-alert"></i>
+               <span>تنبيهات</span>
+               <span class="badge badge-secondary">8</span> 
+                </a> 				 		
+            </li> 
+            
+             <li> 
+                <a href="العملاء.html" > 
+                    <i class="entypo-users"></i>
+                    <span>عملاء</span> 
+                </a> 	
+            </li> 
+            <li>
+                        <a href="الحجوزات.html"> 
+                            <i class="entypo-pencil"></i> 
+                            <span>حجوزات</span> 
+                        </a> 
+                    </li> 
+           
+            
+             <li> 
+                <a href="تعليمات.html "> 
+                    <span>تعليمات</span>
+                </a> 
+            </li> 
+             <li> 
+                <a href="الشكاوى.html"> 
+                    <span>شكاوي</span> 
+                </a> 	
+            </li>
+            
+         	
+           
+             
+        </ul> 			
+			<!-- add class "multiple-expanded" to allow multiple submenus to open -->
+			<!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
+			<!-- Search Bar -->
+		
+				
+	</div>	
+	
+    
+    
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">تحميل ملف</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+    <input type="file" class="form-control">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">اغلاق</button>
+        <button type="button" class="btn btn-primary">حفظ</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+       <div class="top-header">
+	
+	<!-- Profile Info and Notifications -->
+    <div class="col-md-4 col-sm-4 clearfix">
+        
+<!--	<div class="zadna">ذادنا للتنمية والاستثمار</div>	-->
+
+		<div class="pull-left pull-right-xs pull-none-xsm headertitle ">
+		<h4>الصفحة الرئيسية</h4>
+				</div>	   
+		
+	</div>
+	<div class="col-md-2 col-sm-2 clearfix hidden-xs" ></div>
+	
+		<div class="col-md-6 col-sm-6 clearfix">
+				
+		<ul class="user-info pull-right pull-none-xsm">
+		
+						<!-- Profile Info -->
+			<li class="profile-info dropdown"><!-- add class "pull-right" if you want to place this from right -->
+				
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span>                
+</span>
+   <span>مرحبا: احمد محمود</span> 
+					<img src="assets/images/thumb-1@2x.png" alt="" class="img-circle" width="44" />
+				</a>
+				
+				<ul class="dropdown-menu">
+					
+					<!-- Reverse Caret -->
+					<li class="caret"></li>
+					
+					<!-- Profile sub-links -->
+					<li>
+						<a href="بيانات_الموظف.html">
+							<i class="entypo-user"></i>
+							بيانات المستخدم
+						</a>
+					</li>
+					
+					<li>
+						<a href="تعديل_البيانات.html">
+							<i class="entypo-mail"></i>
+							تعديل البيانات
+						</a>
+					</li>
+					
+					<li>
+						<a href="extra-login.html">
+							<i class="entypo-calendar"></i>
+							خروج
+						</a>
+					</li>
+		
+		
+		</ul>
+            </li>
+            <li class="notifications dropdown " >
+				
+				<a  href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" >
+					 <div class="bell fa fa-bell" ></div>
+			<span class="badge badge-secondary" style="right: 13px;"
+              >6</span>
+				</a>
+				
+				
+				<ul class="dropdown-menu" style="width: 250px;">
+					<li class="top">
+	<p class="small">
+		<a href="%D8%B9%D9%85%D9%8A%D9%84.html" class="pull-right">قراءه الكل</a>
+		تمتلك تنبيهات جديده <strong>3</strong> 
+	</p>
+</li>
+
+<li>
+	<ul class="dropdown-menu-list scroller">
+		<li class="unread notification-success">
+			<a  href="%D8%B9%D9%85%D9%8A%D9%84.html">
+				
+				
+				<span class="line">
+					<strong>تسجيل عميل جديد</strong>
+				</span>
+				
+				<span class="line small">
+					منذ 30 ثانيه
+				</span>
+			</a>
+		</li>
+		
+		<li class="unread notification-secondary">
+			<a  href="%D8%B9%D9%85%D9%8A%D9%84.html">
+				
+				
+				<span class="line">
+					<strong>شخص اعجب بهذا</strong>
+				</span>
+				
+				<span class="line small">
+					منذ دقيقتين
+				</span>
+			</a>
+		</li>
+		
+		<li class="notification-primary">
+			<a  href="%D8%B9%D9%85%D9%8A%D9%84.html">
+				
+				
+				<span class="line">
+					<strong>تغيير في الضبط</strong>
+				</span>
+				
+				<span class="line small">
+					منذ 3 ساعات
+				</span>
+			</a>
+		</li>
+		
+		<li class="notification-danger">
+			<a  href="%D8%B9%D9%85%D9%8A%D9%84.html">
+				
+				
+				<span class="line">
+					تم الغاء هذا الحدث
+				</span>
+				
+				<span class="line small">
+					منذ 9 ساعات
+				</span>
+			</a>
+		</li>
+		
+		<li class="notification-info">
+			<a  href="%D8%B9%D9%85%D9%8A%D9%84.html">
+				
+				
+				<span class="line">
+					تعليقات جديده
+				</span>
+				
+				<span class="line small">
+					امس الساعه العاشره
+				</span>
+			</a>
+		</li>
+		
+		<li class="notification-warning">
+			<a  href="%D8%B9%D9%85%D9%8A%D9%84.html">
+				
+				
+				<span class="line">
+					تعليقات جديده
+				</span>
+				
+				<span class="line small">
+					الاسبوع الماضي
+				</span>
+			</a>
+		</li>
+	</ul>
+</li>
+
+<li class="external">
+	<a  href="%D8%B9%D9%85%D9%8A%D9%84.html">مشاهده كل التنبيهات</a>
+</li>				
+ </ul>
+</li>
+        
+       
+        
+        
+       	
+    <li style="display: none">
+   <a  href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" >
+		 <div class="bell1  fa fa-bell" ></div>
+			
+				</a>
+        </li> 			
+					
+				</ul>
+		
+		
+	</div>
+	
+    <!-- Raw Links -->
+
+	
+	
+	
+	<!-- Raw Links -->
+	
+	
+</div>
+
+
+<div class="timeday">
+
+	    <div >
+        
+<!--	<div class="zadna">ذادنا للتنمية والاستثمار</div>	-->
+
+	
+				<div  style="float: left">
+				  <div class="pull-left pull-left-xs pull-none-xsm form-control" id="txt" style="border:.5px solid black "></div>
+				  </div>
+				  <div  style="float: left">
+			<div class="pull-left pull-left-xs pull-none-xsm">
+		
+				<p id="date" class="form-control" style="border:.5px solid black"></p>
+				</div>
+				</div>	
+    
+      
+		
+	</div>
+</div>
+	<div class="main-content">
+		
+
+<div class="row">
+	
+
+
+	<div class="col-md-12">
+		
+		<ul class="nav nav-tabs bordered"><!-- available classes "bordered", "right-aligned" -->
+			<li class="active">
+				<a href="#first" data-toggle="tab">
+					<span class="visible-xs">المنتجات والخدمات</span>
+					<span class="hidden-xs"> المنتجات والخدمات</span>
+				</a>
+			</li>
+			<li>
+				<a href="#second" data-toggle="tab">
+					<span class="visible-xs">الشحن</span>
+					<span class="hidden-xs"> الشحن</span>
+				</a>
+			</li>
+		
+		</ul>
+		
+		<div class="tab-content">
+			<div class="tab-pane active" id="first">
+				
+
+                <div class="row">
+                <div class="col-md-12">
+
+    <table id="table_id" class="display data-table">
+        <thead>
+  <tr>
+    <th>المنتج</th>
+    <th>السعر</th> 
+      
+    <th>الوصف </th>
+      <th>ألغاء الحجز خلال</th>
+  
+  </tr>
+            
+    </thead>
+  <tbody><tr>
+    <td><a  data-toggle="modal"  data-target="#myModal">2222</a></td>
+    <td>Jackson</td> 
+    <td>94</td>
+      <td>Eve</td>
+   
+  </tr>
+        
+        <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+      <td>Eve</td>
+ 
+  </tr></tbody>
+</table></div>
+<br>
+<hr class="style8">
+<br>
+     <div class="col-md-12">
+
+    <table id="table_id3" class="display data-table">
+        <thead>
+  <tr>
+    <th>المنتج</th>
+    <th>السعر</th> 
+      
+    <th>الوصف </th>
+      <th>ألغاء الحجز خلال</th>
+  
+  </tr>
+            
+    </thead>
+  <tbody><tr>
+    <td><a  data-toggle="modal"  data-target="#myModal">2222</a></td>
+    <td>Jackson</td> 
+    <td>94</td>
+      <td>Eve</td>
+   
+  </tr>
+        
+        <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+      <td>Eve</td>
+ 
+  </tr></tbody>
+</table></div>
+                   
+</div>
+                <!-- Modal -->
+<div id="myModal" class="modal" >
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">المنتجات والخدمات </h4>
+      </div>
+      <div class="modal-body">
+        	<div class="form-group">
+                <div class="row">
+						<label for="field-1" class="col-sm-3 control-label">المنتج/ الخامة</label>
+						
+						<div class="col-sm-5">
+							<input type="text" class="form-control" id="field-1" placeholder="Placeholder">
+						</div>
+					</div>
+          
+          
+                   <div class="row">
+						<label for="field-1" class="col-sm-3 control-label">السعر</label>
+						
+						<div class="col-sm-5">
+							<input type="text" class="form-control" id="field-1" placeholder="Placeholder">
+						</div>
+					</div>
+                  <div class="row">
+						<label for="field-1" class="col-sm-3 control-label">المدة المسموح بها لاإلغاء الخجز</label>
+						
+						<div class="col-sm-5">
+							<input type="text" class="form-control" id="field-1" placeholder="Placeholder">
+						</div>
+					</div>
+                   <div class="row">
+						<label for="field-1" class="col-sm-3 control-label">الوصف</label>
+						
+						<div class="col-sm-5">
+							
+                            <textarea rows="10" class="form-control" id="field-1" placeholder="Placeholder" ></textarea>
+						</div>
+					</div>
+          </div>
+          
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+				
+			</div>
+			<div class="tab-pane" id="second">
+             
+				 <table id="table_id2" class="display data-table">
+        <thead>
+  <tr>
+  <th>الشحن</th>
+    <th>السعر</th> 
+      <th>الوصف</th>
+   
+  </tr>
+            
+    </thead>
+  <tbody><tr>
+    <td><a  data-toggle="modal"  data-target="#myModal2">2222</a></td>
+    <td>Jackson</td> 
+    <td>94</td>
+   
+   
+  </tr>
+        
+        <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+     
+    
+  </tr></tbody>
+</table>
+                
+                 <!-- Modal -->
+<div id="myModal2" class="modal" >
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">الشحن </h4>
+      </div>
+      <div class="modal-body">
+        	<div class="form-group">
+                <div class="row">
+						<label for="field-1" class="col-sm-3 control-label">الشحن</label>
+						
+						<div class="col-sm-5">
+							<input type="text" class="form-control" id="field-1" placeholder="Placeholder">
+						</div>
+					</div>
+          
+           <div class="row">
+						<label for="field-1" class="col-sm-3 control-label">السعر</label>
+						
+						<div class="col-sm-5">
+							<input type="text" class="form-control" id="field-1" placeholder="Placeholder">
+						</div>
+					</div>
+               
+               
+                   <div class="row">
+						<label for="field-1" class="col-sm-3 control-label">الوصف</label>
+						
+						<div class="col-sm-5">
+							
+                            <textarea rows="10" class="form-control" id="field-1" placeholder="Placeholder" ></textarea>
+						</div>
+					</div>
+          </div>
+          
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+               
+
+				
+			</div>
+        
+		
+	</div>
+</div>
+
+
+
+</div>
+	
+	
+
+	</div>
+    <script>
+    
+  $(document).ready( function () {
+  $('.data-table').DataTable({
+    "paging": true,
+    "info": true,
+    "responsive": true,
+    "aoColumnDefs": [{
+        "bSortable": false,
+        "aTargets": ["no-sort"]
+    }],
+    "bInfo": true
+  });
+  
+  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+    $('.data-table:visible').each( function(e) {
+    //   alert('visible ' + $(this).attr('id'));
+      $(this).DataTable().columns.adjust().responsive.recalc();
+    });
+  });
+  
+} );
+
+        $(".dataTables_wrapper select").select2({
+			minimumResultsForSearch: -1
+		});
+
+    </script>
+    <script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+	<link rel="stylesheet" href="assets/js/jvectormap/jquery-jvectormap-1.2.2.css">
+	<link rel="stylesheet" href="assets/js/rickshaw/rickshaw.min.css">
+
+	<!-- Bottom Scripts -->
+	<script src="assets/js/gsap/main-gsap.js"></script>
+	<script src="assets/js/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
+	<script src="assets/js/joinable.js"></script>
+	<script src="assets/js/resizeable.js"></script>
+	<script src="assets/js/neon-api.js"></script>
+	<script src="assets/js/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+	<script src="assets/js/jvectormap/jquery-jvectormap-europe-merc-en.js"></script>
+	<script src="assets/js/jquery.sparkline.min.js"></script>
+	<script src="assets/js/rickshaw/vendor/d3.v3.js"></script>
+	<script src="assets/js/rickshaw/rickshaw.min.js"></script>
+	<script src="assets/js/raphael-min.js"></script>
+	<script src="assets/js/morris.min.js"></script>
+	<script src="assets/js/toastr.js"></script>
+	<script src="assets/js/neon-chat.js"></script>
+	<script src="assets/js/jquery.dataTables.min (2).js"></script>
+	<script src="assets/js/neon-custom.js"></script>
+	<script src="assets/js/neon-demo.js"></script>
+    <script src="assets/js/selectboxit/jquery.selectBoxIt.min.js"></script>
+
+</body>
+</html>

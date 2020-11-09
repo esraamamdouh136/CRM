@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="arabic" dir="rtl">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Neon Admin Panel" />
+	<meta name="author" content="" />
+	
+	<title>instaction</title>
+	
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/font-icons/entypo/css/entypo.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/bootstrap.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/neon-core.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/neon-theme.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/neon-forms.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/neon-rtl.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/custom.css">
+    <link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/esraaStyle.css">
+    <link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/madonaStyle.css">   
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/jquery-1.11.0.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+      
+      
+
+	<!--[if lt IE 9]><script src="http://173.212.198.28:8010/crm/design/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	
+	
+</head>
+<body class="page-body" data-url="http://neon.dev">
+
+<div class="page-container right-sidebar"><!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->	
+	
+	<div class="sidebar-menu">
+		
+			
+		<header class="logo-env">
+			
+			<!-- logo -->
+			<div class="logo">
+				<a href="index.html">
+					<img src="http://173.212.198.28:8010/crm/design/assets/images/logo.png" width="120" alt="" />
+				</a>
+			</div>
+			
+						<!-- logo collapse icon -->
+						
+			<div class="sidebar-collapse">
+				<a href="#" class="sidebar-collapse-icon with-animation"><!-- add class "with-animation" if you want sidebar to have animation during expanding/collapsing transition -->
+					<i class="entypo-menu"></i>
+				</a>
+			</div>
+			
+									
+			
+			<!-- open/close menu icon (do not remove if you want to enable menu on mobile devices) -->
+			<div class="sidebar-mobile-menu visible-xs">
+				<a href="#" class="with-animation"><!-- add class "with-animation" to support animation -->
+					<i class="entypo-menu"></i>
+				</a>
+			</div>
+			
+		</header>
+				
+		
+		
+				
+		
+	
+	<div class="sidebar-menu">
+		
+			
+		<header class="logo-env">
+			
+			<!-- logo -->
+			<div class="logo">
+				<a href="layout-right-sidebar.html">
+					<img src="http://173.212.198.28:8010/crm/design/assets/images/logo.png" width="120" alt="" />
+				</a>
+			</div>
+			
+						<!-- logo collapse icon -->
+						
+			<div class="sidebar-collapse">
+				<a href="#" class="sidebar-collapse-icon with-animation"><!-- add class "with-animation" if you want sidebar to have animation during expanding/collapsing transition -->
+					<i class="entypo-menu"></i>
+				</a>
+			</div>
+			
+									
+			
+			<!-- open/close menu icon (do not remove if you want to enable menu on mobile devices) -->
+			<div class="sidebar-mobile-menu visible-xs">
+				<a href="#" class="with-animation"><!-- add class "with-animation" to support animation -->
+					<i class="entypo-menu"></i>
+				</a>
+			</div>
+			
+		</header>
+				
+		
+		
+				
+		
+				
+			
+		
+				
+		<ul id="main-menu" class=""> 			<!-- add class "multiple-expanded" to allow multiple submenus to open --> 			<!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" --> 			<!-- Search Bar --> 		 			<li> 				<a href="التقويم.html"> 					<i class="entypo-calendar"></i> 					<span>التقويم</span> 				</a> 			</li> 			<li class="opened active"> 				<a href="التنبيهات.html"> 					<i class="entypo-alert"></i> 					<span>تنبيهات</span> 					<span class="badge badge-secondary">8</span> 				</a> 				 			</li> 			<li> 				<a href="ui-panels.html"> 					<i class="entypo-newspaper"></i> 					<span>المهام</span> 				</a> 				<ul> 					<li data-toggle="modal" data-target="#exampleModal"> 						<a href="#"> 							<i class="entypo-attach"></i> 							<span>رفع ملف</span> 						</a> 					</li> 					<li> 						<a href="تعيين-مهام.html"> 							<span>تعيين مهام</span> 						</a> 					</li> 				 				</ul> 			</li> 			<li> 				<a href="الموظفين.html" > 					<i class="entypo-users"></i> 					<span>موظفين</span> 				</a> 			</li>             <li> 				<a href="الصلاحيات.html" > 					<i class="entypo-users"></i> 					<span>المجموعات</span> 				</a> 			</li> 			<li> 				<a href="العملاء.html" > 				<i class="entypo-users"></i> 					<span>عملاء</span> 				</a> 			</li> 			<li> 				<a href="الرسائل.html" > 				<i class="entypo-comment"></i> 					<span>رسائل</span> 				</a> 			</li> 			<li> 				<a href="الايميلات.html" > 					<i class="entypo-mail"></i> 					<span>ايميل</span> 				</a> 			</li> 			<li> 				<a href="تعليمات.html "> 				 					<span>تعليمات</span> 					 				</a> 			 			</li> 			  			 			<li> 				<a href="الشكاوى.html"> 					 					<span>شكاوي</span> 				</a> 			</li> 			<li> 				<a href="#"> 				 					<span>الاعدادات</span> 				</a> 				<ul> 					<li> 						<a href="الحجوزات.html"> 							<i class="entypo-pencil"></i> 							<span>حجوزات</span> 						</a> 					</li> 					<li> 						<a href="#"> 							<i class="entypo-database"></i> 							<span>قاعدة البيانات</span> 						</a> 					</li>                                          <li> 						<a href="تغير المحتوى.html"> 							<i class="entypo-database"></i> 							<span>تغير المحتوى</span> 						</a> 					</li>                      					<li> 						<a href="قاعدة البيانات.html"> 							<i class="entypo-book-open"></i> 							<span>بيانات الشركة</span> 						</a> 					</li> 				</ul> 			</li> 		</ul> 			
+			<!-- add class "multiple-expanded" to allow multiple submenus to open -->
+			<!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
+			<!-- Search Bar -->
+		
+	
+				
+	</div>	
+			
+	</div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">تحميل ملف</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+    <input type="file" class="form-control">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">اغلاق</button>
+        <button type="button" class="btn btn-primary">حفظ</button>
+      </div>
+    </div>
+  </div>
+</div>
+       <div class="top-header">
+	
+	<!-- Profile Info and Notifications -->
+    <div class="col-md-4 col-sm-4 clearfix">
+        
+<!--	<div class="zadna">ذادنا للتنمية والاستثمار</div>	-->
+
+		<div class="pull-left pull-right-xs pull-none-xsm headertitle ">
+		<h4>الصفحة الرئيسية</h4>
+				</div>	   
+		
+	</div>
+	<div class="col-md-2 col-sm-2 clearfix hidden-xs" ></div>
+	
+		<div class="col-md-6 col-sm-6 clearfix">
+				
+		<ul class="user-info pull-right pull-none-xsm">
+		
+						<!-- Profile Info -->
+			<li class="profile-info dropdown"><!-- add class "pull-right" if you want to place this from right -->
+				
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span>                
+</span>
+   <span>مرحبا: احمد محمود</span> 
+					<img src="http://173.212.198.28:8010/crm/design/assets/images/thumb-1@2x.png" alt="" class="img-circle" width="44" />
+				</a>
+				
+				<ul class="dropdown-menu">
+					
+					<!-- Reverse Caret -->
+					<li class="caret"></li>
+					
+					<!-- Profile sub-links -->
+					<li>
+						<a href="%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA_%D8%A7%D9%84%D9%85%D9%88%D8%B8%D9%81.html">
+							<i class="entypo-user"></i>
+							بيانات المستخدم
+						</a>
+					</li>
+					
+					<li>
+						<a href="%D8%AA%D8%B9%D8%AF%D9%8A%D9%84_%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA.html">
+							<i class="entypo-mail"></i>
+							تعديل البيانات
+						</a>
+					</li>
+					
+					<li>
+						<a href="extra-calendar.html">
+							<i class="entypo-calendar"></i>
+							خروج
+						</a>
+					</li>
+		
+		
+		</ul>
+            </li>
+            <li class="notifications dropdown ">
+				
+				
+				
+				
+				<ul class="dropdown-menu" style="width: 250px;">
+					<li class="top">
+	<p class="small">
+		<a href="#" class="pull-right">قراءه الكل</a>
+		تمتلك تنبيهات جديده <strong>3</strong> 
+	</p>
+</li>
+
+<li>
+	<ul class="dropdown-menu-list scroller">
+		<li class="unread notification-success">
+			<a href="#">
+				
+				
+				<span class="line">
+					<strong>تسجيل عميل جديد</strong>
+				</span>
+				
+				<span class="line small">
+					منذ 30 ثانيه
+				</span>
+			</a>
+		</li>
+		
+		<li class="unread notification-secondary">
+			<a href="#">
+				
+				
+				<span class="line">
+					<strong>شخص اعجب بهذا</strong>
+				</span>
+				
+				<span class="line small">
+					منذ دقيقتين
+				</span>
+			</a>
+		</li>
+		
+		<li class="notification-primary">
+			<a href="#">
+				
+				
+				<span class="line">
+					<strong>تغيير في الضبط</strong>
+				</span>
+				
+				<span class="line small">
+					منذ 3 ساعات
+				</span>
+			</a>
+		</li>
+		
+		<li class="notification-danger">
+			<a href="#">
+				
+				
+				<span class="line">
+					تم الغاء هذا الحدث
+				</span>
+				
+				<span class="line small">
+					منذ 9 ساعات
+				</span>
+			</a>
+		</li>
+		
+		<li class="notification-info">
+			<a href="#">
+				
+				
+				<span class="line">
+					تعليقات جديده
+				</span>
+				
+				<span class="line small">
+					امس الساعه العاشره
+				</span>
+			</a>
+		</li>
+		
+		<li class="notification-warning">
+			<a href="#">
+				
+				
+				<span class="line">
+					تعليقات جديده
+				</span>
+				
+				<span class="line small">
+					الاسبوع الماضي
+				</span>
+			</a>
+		</li>
+	</ul>
+</li>
+
+<li class="external">
+	<a href="#">مشاهده كل التنبيهات</a>
+</li>				
+ </ul>
+</li>
+        
+       
+        
+        
+       	
+   		
+					
+				</ul>
+		
+		
+	</div>
+	
+    <!-- Raw Links -->
+
+	
+	
+	
+	<!-- Raw Links -->
+	
+	
+</div>
+	<div class="main-content">
+		
+
+
+<script type="text/javascript">
+jQuery(document).ready(function($) 
+{
+	// Sample Toastr Notification
+	setTimeout(function()
+	{			
+		var opts = {
+			"closeButton": true,
+			"debug": false,
+			"positionClass": rtl() || public_vars.$pageContainer.hasClass('right-sidebar') ? "toast-top-left" : "toast-top-right",
+			"toastClass": "black",
+			"onclick": null,
+			"showDuration": "300",
+			"hideDuration": "1000",
+			"timeOut": "5000",
+			"extendedTimeOut": "1000",
+			"showEasing": "swing",
+			"hideEasing": "linear",
+			"showMethod": "fadeIn",
+			"hideMethod": "fadeOut"
+		};
+
+		toastr.success("You have been awarded with 1 year free subscription. Enjoy it!", "Account Subcription Updated", opts);
+	}, 3000);
+	
+	
+	// Sparkline Charts
+	$('.inlinebar').sparkline('html', {type: 'bar', barColor: '#ff6264'} );
+	$('.inlinebar-2').sparkline('html', {type: 'bar', barColor: '#445982'} );
+	$('.inlinebar-3').sparkline('html', {type: 'bar', barColor: '#00b19d'} );
+	$('.bar').sparkline([ [1,4], [2, 3], [3, 2], [4, 1] ], { type: 'bar' });
+	$('.pie').sparkline('html', {type: 'pie',borderWidth: 0, sliceColors: ['#3d4554', '#ee4749','#00b19d']});
+	$('.linechart').sparkline();
+	$('.pageviews').sparkline('html', {type: 'bar', height: '30px', barColor: '#ff6264'} );
+	$('.uniquevisitors').sparkline('html', {type: 'bar', height: '30px', barColor: '#00b19d'} );
+	
+	
+	$(".monthly-sales").sparkline([1,2,3,5,6,7,2,3,3,4,3,5,7,2,4,3,5,4,5,6,3,2], {
+		type: 'bar',
+		barColor: '#485671',
+		height: '80px',
+		barWidth: 10,
+		barSpacing: 2
+	});	
+	
+	
+	// JVector Maps
+	var map = $("#map");
+	
+	map.vectorMap({
+		map: 'europe_merc_en',
+		zoomMin: '3',
+		backgroundColor: '#383f47',
+		focusOn: { x: 0.5, y: 0.8, scale: 3 }
+	});		
+	
+			
+	
+	
+	
+	
+	// Rickshaw
+	var seriesData = [ [], [] ];
+	
+	var random = new Rickshaw.Fixtures.RandomData(50);
+	
+	for (var i = 0; i < 50; i++) 
+	{
+		random.addData(seriesData);
+	}
+	
+	var graph = new Rickshaw.Graph( {
+		element: document.getElementById("rickshaw-chart-demo"),
+		height: 193,
+		renderer: 'area',
+		stroke: false,
+		preserve: true,
+		series: [{
+				color: '#73c8ff',
+				data: seriesData[0],
+				name: 'Upload'
+			}, {
+				color: '#e0f2ff',
+				data: seriesData[1],
+				name: 'Download'
+			}
+		]
+	} );
+	
+	graph.render();
+	
+	var hoverDetail = new Rickshaw.Graph.HoverDetail( {
+		graph: graph,
+		xFormatter: function(x) {
+			return new Date(x * 1000).toString();
+		}
+	} );
+	
+	var legend = new Rickshaw.Graph.Legend( {
+		graph: graph,
+		element: document.getElementById('rickshaw-legend')
+	} );
+	
+	var highlighter = new Rickshaw.Graph.Behavior.Series.Highlight( {
+		graph: graph,
+		legend: legend
+	} );
+	
+	setInterval( function() {
+		random.removeData(seriesData);
+		random.addData(seriesData);
+		graph.update();
+	
+	}, 500 );
+});
+
+
+function getRandomInt(min, max) 
+{
+	return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+    
+</script>
+        
+
+<br />
+
+<!--mail-body       -->
+  
+<div class="row">
+       <div class="row">
+       
+        <div class="col-md-3" style="margin-bottom: 4%; float: left">
+        <div class="mail-sidebar-row hidden-xs">
+			<a href="%D8%A7%D8%B1%D8%B3%D8%A7%D9%84_%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA.html"class="btn btn-success btn-icon btn-block">
+				ارسال تعليمه جديده
+				<i class="entypo-pencil"></i>
+			</a>
+		</div>
+        <div class="mail-sidebar-row visible-xs">
+		<a href="%D8%A7%D9%84%D8%A7%D9%8A%D9%85%D9%8A%D9%84%D8%A7%D8%AA.html" class="btn btn-success btn-icon btn-block">
+			ارسال تعليمه جديده 
+			<i class="entypo-pencil"></i>
+		</a>
+	</div>    
+        
+        </div>
+    </div> 
+
+	<div class="col-md-12">
+
+		<div class="tabs-vertical-env">
+			
+			<div class="tab-content">
+				<div class="tab-pane active" id="v2-home">
+                
+	<div class="mail-body">
+		
+	
+		
+		
+		<!-- mail table -->
+       <div class="tab-content">
+		<table class="table mail-table" id="myTableDaily">
+			<!-- mail table header -->
+			<thead>
+				<tr class="unread"><!-- new email class: unread -->
+					<th>
+						<div>
+							
+						</div>
+					</th>
+				
+					<th class="col-subject size">
+						<a href="%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84-%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA.html">
+							<i class="fas fa-users"></i> &nbsp;  الي:
+						</a>
+					</th>
+				<th class="col-subject size">
+						<a href="%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84-%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA.html">
+                           <i class="fas fa-location-arrow"></i> &nbsp;   العنوان:
+						</a>
+					</th>	
+				<th class="col-name size">
+				<a href="%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84-%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA.html" class="col-name"><i class="fas fa-envelope"></i>&nbsp;   المحتوي:</a>
+					</th>
+                <th>
+					    <div>
+						</div>
+					</th>
+                 <th> 
+                    <div>	
+                    </div>
+					</th>    
+				</tr>
+			</thead>
+			
+			<!-- email list -->
+			<tbody  >
+				<tr class="unread"><!-- new email class: unread -->
+					<td>
+						<div class="checkbox checkbox-replace">
+							<input type="checkbox" />
+						</div>
+					</td>
+					<td class="col-name">
+						
+						<a href="mailbox-message.html" class="col-name">ali</a>
+					</td>
+					<td class="col-subject">
+						<a href="mailbox-message.html">
+						ahmed	
+						</a>
+					</td>
+				<td class="col-subject">
+						<a href="mailbox-message.html">
+                          ahmed 
+						</a>
+					</td>	
+				<td class="col-subject">
+				<a href="%D8%AA%D8%B9%D8%AF%D9%8A%D9%84_%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA.html">	
+                    <button class="btn btn-blue btn-sm">
+                    <i class="entypo-pencil"></i>تعديل
+                    </button>	</a>		
+					</td>
+                <td class="col-subject">
+						<button class="btn btn-danger btn-sm" onclick="deleteRow(this) ">
+                            <i class="entypo-trash"></i>مسح
+                    </button>		
+					</td> 
+				</tr>
+				
+				
+				
+				<tr class="unread"><!-- new email class: unread -->
+					<td>
+						<div class="checkbox checkbox-replace">
+							<input type="checkbox" />
+						</div>
+					</td>
+					<td class="col-name">
+						
+						<a href="mailbox-message.html" class="col-name">ahmed</a>
+					</td>
+					<td class="col-subject">
+						<a href="mailbox-message.html">
+						ahmed	
+						</a>
+					</td>
+				<td class="col-subject">
+						<a href="mailbox-message.html">
+                          ahmed 
+						</a>
+					</td>
+                <td class="col-subject">
+	<a href="%D8%AA%D8%B9%D8%AF%D9%8A%D9%84_%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA.html">	<button class="btn btn-blue btn-sm">
+                    <i class="entypo-pencil"></i>تعديل
+                    </button>	</a>	
+					</td>
+                <td class="col-subject">
+						<button class="btn btn-danger btn-sm" onclick="deleteRow(this) ">
+                            <i class="entypo-trash"></i>مسح
+                    </button>		
+					</td>    
+					
+				</tr>
+				
+				
+				
+				<tr class="unread"><!-- new email class: unread -->
+					<td>
+						<div class="checkbox checkbox-replace">
+							<input type="checkbox" />
+						</div>
+					</td>
+					<td class="col-name">
+						
+						<a href="mailbox-message.html" class="col-name">hessen</a>
+					</td>
+					<td class="col-subject">
+						<a href="mailbox-message.html">
+						ahmed	
+						</a>
+					</td>
+				<td class="col-subject">
+						<a href="mailbox-message.html">
+                           ahmed
+						</a>
+					</td>	
+				<td class="col-subject">
+				<a href="%D8%AA%D8%B9%D8%AF%D9%8A%D9%84_%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA.html">	<button class="btn btn-blue btn-sm">
+                    <i class="entypo-pencil"></i>تعديل
+                    </button>	</a>		
+					</td>
+                <td class="col-subject">
+						<button class="btn btn-danger btn-sm" onclick="deleteRow(this) ">
+                            <i class="entypo-trash"></i>مسح
+                    </button>		
+					</td> 	
+				</tr>
+				
+			
+			
+				<tr class="unread"><!-- new email class: unread -->
+					<td>
+						<div class="checkbox checkbox-replace">
+							<input type="checkbox" />
+						</div>
+					</td>
+					<td class="col-name">
+						
+						<a href="mailbox-message.html" class="col-name">ahmed</a>
+					</td>
+					<td class="col-subject">
+						<a href="mailbox-message.html">
+						hussen	
+						</a>
+					</td>
+				<td class="col-subject">
+						<a href="mailbox-message.html">
+                          ahmed 
+						</a>
+					</td>	
+				<td class="col-subject">
+				<a href="%D8%AA%D8%B9%D8%AF%D9%8A%D9%84_%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA.html">	<button class="btn btn-blue btn-sm">
+                    <i class="entypo-pencil"></i>تعديل
+                    </button>	</a>		
+					</td>
+                <td class="col-subject">
+					<button class="btn btn-danger btn-sm" onclick="deleteRow(this) ">
+                            <i class="entypo-trash"></i>مسح
+                    </button>		
+					</td> 	
+				</tr>
+				
+				
+				<tr class="unread"><!-- new email class: unread -->
+					<td>
+						<div class="checkbox checkbox-replace">
+							<input type="checkbox" />
+						</div>
+					</td>
+					<td class="col-name">
+						
+						<a href="mailbox-message.html" class="col-name">ali</a>
+					</td>
+					<td class="col-subject">
+						<a href="mailbox-message.html">
+							ahmed
+						</a>
+					</td>
+				<td class="col-subject">
+						<a href="mailbox-message.html">
+                           ahmed
+						</a>
+					</td>	
+				<td class="col-subject">
+				<a href="%D8%AA%D8%B9%D8%AF%D9%8A%D9%84_%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA.html">	<button class="btn btn-blue btn-sm">
+                    <i class="entypo-pencil"></i>تعديل
+                    </button>	</a>		
+					</td>
+                <td class="col-subject">
+						<button class="btn btn-danger btn-sm" onclick="deleteRow(this) ">
+                            <i class="entypo-trash"></i>مسح
+                    </button>		
+					</td> 	
+				</tr>
+                
+                
+		
+				
+			
+			
+				
+		
+				
+			</tbody>
+			
+			<!-- mail table footer -->
+			
+		</table>
+           
+        </div>       
+	</div>    
+	</div>
+				
+			</div>
+			
+		</div>
+
+	</div>
+
+</div>
+      
+<div class="row">
+<div class="col-sm-8" hidden>
+
+<div class="panel panel-primary" id="charts_env">
+
+    <div class="panel-heading">
+        <div class="panel-title">Site Stats</div>
+
+        <div class="panel-options">
+            <ul class="nav nav-tabs">
+                <li class=""><a href="#area-chart" data-toggle="tab">Area Chart</a></li>
+                <li class="active"><a href="#line-chart" data-toggle="tab">Line Charts</a></li>
+                <li class=""><a href="#pie-chart" data-toggle="tab">Pie Chart</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="panel-body">
+
+        <div class="tab-content">
+
+            <div class="tab-pane" id="area-chart">							
+                <div id="area-chart-demo" class="morrischart" style="height: 300px"></div>
+            </div>
+
+            <div class="tab-pane active" id="line-chart">
+                <div id="line-chart-demo" class="morrischart" style="height: 300px"></div>
+            </div>
+
+            <div class="tab-pane" id="pie-chart">
+                <div id="donut-chart-demo" class="morrischart" style="height: 300px;"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <table class="table table-bordered table-responsive">
+
+        <thead>
+            <tr>
+                <th width="50%" class="col-padding-1">
+                    <div class="pull-left">
+                        <div class="h4 no-margin">Pageviews</div>
+                        <small>54,127</small>
+                    </div>
+                    <span class="pull-right pageviews">4,3,5,4,5,6,5</span>
+
+                </th>
+                <th width="50%" class="col-padding-1">
+                    <div class="pull-left">
+                        <div class="h4 no-margin">Unique Visitors</div>
+                        <small>25,127</small>
+                    </div>
+                    <span class="pull-right uniquevisitors">2,3,5,4,3,4,5</span>
+                </th>
+            </tr>
+        </thead>
+
+    </table>
+
+</div>	
+
+</div>
+<div class="col-sm-4" hidden>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <div class="panel-title">
+            <h4>
+                Real Time Stats
+                <br />
+                <small>current server uptime</small>
+            </h4>
+        </div>
+
+        <div class="panel-options">
+            <a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a>
+            <a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+            <a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>
+            <a href="#" data-rel="close"><i class="entypo-cancel"></i></a>
+        </div>
+    </div>
+
+    <div class="panel-body no-padding">
+        <div id="rickshaw-chart-demo">
+            <div id="rickshaw-legend"></div>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+<br />
+
+
+
+<script type="text/javascript">
+	// Code used to add Todo Tasks
+	jQuery(document).ready(function($)
+	{
+		var $todo_tasks = $("#todo_tasks");
+		
+		$todo_tasks.find('input[type="text"]').on('keydown', function(ev)
+		{
+			if(ev.keyCode == 13)
+			{
+				ev.preventDefault();
+				
+				if($.trim($(this).val()).length)
+				{
+					var $todo_entry = $('<li><div class="checkbox checkbox-replace color-white"><input type="checkbox" /><label>'+$(this).val()+'</label></div></li>');
+					$(this).val('');
+					
+					$todo_entry.appendTo($todo_tasks.find('.todo-list'));
+					$todo_entry.hide().slideDown('fast');
+					replaceCheckboxes();
+				}
+			}
+		});
+	});
+</script>
+
+
+<!-- Footer -->
+	</div>
+	
+	
+<div id="chat" class="fixed" data-current-user="Art Ramadani" data-order-by-status="1" data-max-chat-history="25">
+	
+	<div class="chat-inner">
+	
+		
+		<h2 class="chat-header">
+			<a href="#" class="chat-close" data-animate="1"><i class="entypo-cancel"></i></a>
+			
+			<i class="entypo-users"></i>
+			Chat
+			<span class="badge badge-success is-hidden">0</span>
+		</h2>
+		
+		
+		<div class="chat-group" id="group-1">
+			<strong>Favorites</strong>
+			
+			<a href="#" id="sample-user-123" data-conversation-history="#sample_history"><span class="user-status is-online"></span> <em>Catherine J. Watkins</em></a>
+			<a href="#"><span class="user-status is-online"></span> <em>Nicholas R. Walker</em></a>
+			<a href="#"><span class="user-status is-busy"></span> <em>Susan J. Best</em></a>
+			<a href="#"><span class="user-status is-offline"></span> <em>Brandon S. Young</em></a>
+			<a href="#"><span class="user-status is-idle"></span> <em>Fernando G. Olson</em></a>
+		</div>
+		
+		
+		<div class="chat-group" id="group-2">
+			<strong>Work</strong>
+			
+			<a href="#"><span class="user-status is-offline"></span> <em>Robert J. Garcia</em></a>
+			<a href="#" data-conversation-history="#sample_history_2"><span class="user-status is-offline"></span> <em>Daniel A. Pena</em></a>
+			<a href="#"><span class="user-status is-busy"></span> <em>Rodrigo E. Lozano</em></a>
+		</div>
+		
+		
+		<div class="chat-group" id="group-3">
+			<strong>Social</strong>
+			
+			<a href="#"><span class="user-status is-busy"></span> <em>Velma G. Pearson</em></a>
+			<a href="#"><span class="user-status is-offline"></span> <em>Margaret R. Dedmon</em></a>
+			<a href="#"><span class="user-status is-online"></span> <em>Kathleen M. Canales</em></a>
+			<a href="#"><span class="user-status is-offline"></span> <em>Tracy J. Rodriguez</em></a>
+		</div>
+	
+	</div>
+	
+	<!-- conversation template -->
+	<div class="chat-conversation">
+		
+		<div class="conversation-header">
+			<a href="#" class="conversation-close"><i class="entypo-cancel"></i></a>
+			
+			<span class="user-status"></span>
+			<span class="display-name"></span> 
+			<small></small>
+		</div>
+		
+		<ul class="conversation-body">	
+		</ul>
+		
+		<div class="chat-textarea">
+			<textarea class="form-control autogrow" placeholder="Type your message"></textarea>
+		</div>
+		
+	</div>
+	
+</div>
+
+
+<!-- Chat Histories -->
+<ul class="chat-history" id="sample_history">
+	<li>
+		<span class="user">Art Ramadani</span>
+		<p>Are you here?</p>
+		<span class="time">09:00</span>
+	</li>
+	
+	<li class="opponent">
+		<span class="user">Catherine J. Watkins</span>
+		<p>This message is pre-queued.</p>
+		<span class="time">09:25</span>
+	</li>
+	
+	<li class="opponent">
+		<span class="user">Catherine J. Watkins</span>
+		<p>Whohoo!</p>
+		<span class="time">09:26</span>
+	</li>
+	
+	<li class="opponent unread">
+		<span class="user">Catherine J. Watkins</span>
+		<p>Do you like it?</p>
+		<span class="time">09:27</span>
+	</li>
+</ul>
+
+
+
+
+<!-- Chat Histories -->
+<ul class="chat-history" id="sample_history_2">
+	<li class="opponent unread">
+		<span class="user">Daniel A. Pena</span>
+		<p>I am going out.</p>
+		<span class="time">08:21</span>
+	</li>
+	
+	<li class="opponent unread">
+		<span class="user">Daniel A. Pena</span>
+		<p>Call me when you see this message.</p>
+		<span class="time">08:27</span>
+	</li>
+</ul>	
+	</div>
+
+
+
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/js/jvectormap/jquery-jvectormap-1.2.2.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/js/rickshaw/rickshaw.min.css">
+    <link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/js/select2/select2-bootstrap.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/js/select2/select2.css">
+
+	<!-- Bottom Scripts -->
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/gsap/main-gsap.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/bootstrap.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/joinable.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/resizeable.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/neon-api.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/jvectormap/jquery-jvectormap-europe-merc-en.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/jquery.sparkline.min.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/rickshaw/vendor/d3.v3.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/rickshaw/rickshaw.min.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/raphael-min.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/morris.min.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/toastr.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/neon-chat.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/neon-custom.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/neon-demo.js"></script>
+
+<script>
+//$(document).ready(function(){
+//
+// $("#tbUser").on('click','.btnDelete',function(){
+//       $(this).closest('tr').remove();
+//     });
+//
+//});
+function deleteRow(r) {
+	var y= confirm("Are you Sure");
+switch(y)
+{
+case false:
+
+break;
+default:
+var i = r.parentNode.parentNode.rowIndex;
+      document.getElementById("myTableDaily").deleteRow(i);
+}
+      
+    }
+
+   
+</script>
+</body>
+</html>

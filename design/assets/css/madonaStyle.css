@@ -1,0 +1,280 @@
+/*message style*/
+.mail-search{
+    width: 25%;
+    margin-right: 75%;
+    margin-top: -3%;
+}
+.size {
+    font-size: 15px;
+}
+
+ .back
+{
+    width: 100px;
+    height: 40px;
+    position: relative;
+    background: #cc2424;
+    margin: auto;
+    margin-top: 5%;
+    padding-top: 10px;
+    padding-right: 20px;
+    color: #ffffff;
+    cursor: pointer;
+} 
+
+.back:after 
+{
+    content: ""; position: absolute; left: 0; bottom: 0; width: 0; height: 0; border-left: 20px solid white; border-top: 20px solid transparent; border-bottom: 20px solid transparent; 
+}
+.back:before 
+{
+    content: ""; position: absolute; right: -20px; bottom: 0; width: 0; height: 0; border-left: 20px solid #cc2424; border-top: 20px solid transparent; border-bottom: 20px solid transparent; 
+} 
+.send-instractin {
+    border: 1px solid #cc2424;
+    border-radius: 15px;
+    width: 20%;
+    padding: 5px;
+    cursor: pointer;
+    background: wheat;
+}
+
+.send-instractin {
+    border: 1px solid #cc2424;
+    border-radius: 15px;
+    width: 20%;
+    padding: 5px;
+    cursor: pointer;
+    background: wheat;
+}
+.send
+{
+    background: #cc2424;
+    width: 50px; 
+    height: 50px;
+    margin: auto;
+    margin-top: 10%;
+    color: #ffffff;
+    position: relative; 
+    text-align: center;
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg); 
+    -ms-transform: rotate(20deg); 
+    -o-transform: rotate(20eg);
+} 
+.send:before
+{
+    content: "";
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    height: 50px;
+    width: 50px;
+    background: #cc2424;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg); 
+    -o-transform: rotate(135deg); 
+} 
+.send p {
+    
+    font-size: 18px;
+    padding-top: 15px;
+    -webkit-transform: rotate(-17deg);
+}
+.select {
+    margin-right: 10%;
+    padding: 5px;
+    padding-left: 10%;
+    color: black;
+}
+.edit {
+    margin-top: 23%;
+    bottom: 0px;
+    margin-right: 0;
+    width: 460px;
+    
+}
+.edit-color {
+    background-color: #404040;
+    font-size: 15px;
+    padding-right: 5%;
+    padding-top: 2%;
+    color: #ffffff;
+}
+.modal-content {
+    border: 1px solid #404040;
+    
+}
+.form-group {
+    padding: 5px;
+}
+.form-group label{
+    color:black
+}
+.modal-body {
+    padding: 0;
+}
+#myUL {
+  list-style-type: none;    
+}
+#myInput {
+    margin-top: 5%;
+    border-radius: 40px;
+    padding: 10px;
+    width: 50%;
+}
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 65%;
+    margin-top: 6px;
+}
+#add-group {
+    float: left;
+    background-color: #404040;
+    border-color: #404040;
+    font-size: 16px;
+    margin-top: 20%;
+    margin-left: 5%;
+}
+.group-hr {
+    width: 15%;
+    height: 2px;
+    background-color: #43382b; 
+}
+/*
+.page-container .main-content {
+    z-index: -1;
+}*/
+
+
+.page-container .main-content {
+   
+    margin-top: 3px;
+    
+    
+}
+
+.font {
+    font-size: 13px;
+}
+.bell1{
+  display:block;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.bell{
+  display:block;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  color: #ffffff;
+  -webkit-animation: ring 4s .7s ease-in-out infinite;
+  -webkit-transform-origin: 50% 4px;
+  -moz-animation: ring 4s .7s ease-in-out infinite;
+  -moz-transform-origin: 50% 4px;
+  animation: ring 4s .7s ease-in-out infinite;
+  transform-origin: 50% 4px;
+}
+
+@-webkit-keyframes ring {
+  0% { -webkit-transform: rotateZ(0); }
+  1% { -webkit-transform: rotateZ(30deg); }
+  3% { -webkit-transform: rotateZ(-28deg); }
+  5% { -webkit-transform: rotateZ(34deg); }
+  7% { -webkit-transform: rotateZ(-32deg); }
+  9% { -webkit-transform: rotateZ(30deg); }
+  11% { -webkit-transform: rotateZ(-28deg); }
+  13% { -webkit-transform: rotateZ(26deg); }
+  15% { -webkit-transform: rotateZ(-24deg); }
+  17% { -webkit-transform: rotateZ(22deg); }
+  19% { -webkit-transform: rotateZ(-20deg); }
+  21% { -webkit-transform: rotateZ(18deg); }
+  23% { -webkit-transform: rotateZ(-16deg); }
+  25% { -webkit-transform: rotateZ(14deg); }
+  27% { -webkit-transform: rotateZ(-12deg); }
+  29% { -webkit-transform: rotateZ(10deg); }
+  31% { -webkit-transform: rotateZ(-8deg); }
+  33% { -webkit-transform: rotateZ(6deg); }
+  35% { -webkit-transform: rotateZ(-4deg); }
+  37% { -webkit-transform: rotateZ(2deg); }
+  39% { -webkit-transform: rotateZ(-1deg); }
+  41% { -webkit-transform: rotateZ(1deg); }
+
+  43% { -webkit-transform: rotateZ(0); }
+  100% { -webkit-transform: rotateZ(0); }
+}
+
+@-moz-keyframes ring {
+  0% { -moz-transform: rotate(0); }
+  1% { -moz-transform: rotate(30deg); }
+  3% { -moz-transform: rotate(-28deg); }
+  5% { -moz-transform: rotate(34deg); }
+  7% { -moz-transform: rotate(-32deg); }
+  9% { -moz-transform: rotate(30deg); }
+  11% { -moz-transform: rotate(-28deg); }
+  13% { -moz-transform: rotate(26deg); }
+  15% { -moz-transform: rotate(-24deg); }
+  17% { -moz-transform: rotate(22deg); }
+  19% { -moz-transform: rotate(-20deg); }
+  21% { -moz-transform: rotate(18deg); }
+  23% { -moz-transform: rotate(-16deg); }
+  25% { -moz-transform: rotate(14deg); }
+  27% { -moz-transform: rotate(-12deg); }
+  29% { -moz-transform: rotate(10deg); }
+  31% { -moz-transform: rotate(-8deg); }
+  33% { -moz-transform: rotate(6deg); }
+  35% { -moz-transform: rotate(-4deg); }
+  37% { -moz-transform: rotate(2deg); }
+  39% { -moz-transform: rotate(-1deg); }
+  41% { -moz-transform: rotate(1deg); }
+
+  43% { -moz-transform: rotate(0); }
+  100% { -moz-transform: rotate(0); }
+}
+
+@keyframes ring {
+  0% { transform: rotate(0); }
+  1% { transform: rotate(30deg); }
+  3% { transform: rotate(-28deg); }
+  5% { transform: rotate(34deg); }
+  7% { transform: rotate(-32deg); }
+  9% { transform: rotate(30deg); }
+  11% { transform: rotate(-28deg); }
+  13% { transform: rotate(26deg); }
+  15% { transform: rotate(-24deg); }
+  17% { transform: rotate(22deg); }
+  19% { transform: rotate(-20deg); }
+  21% { transform: rotate(18deg); }
+  23% { transform: rotate(-16deg); }
+  25% { transform: rotate(14deg); }
+  27% { transform: rotate(-12deg); }
+  29% { transform: rotate(10deg); }
+  31% { transform: rotate(-8deg); }
+  33% { transform: rotate(6deg); }
+  35% { transform: rotate(-4deg); }
+  37% { transform: rotate(2deg); }
+  39% { transform: rotate(-1deg); }
+  41% { transform: rotate(1deg); }
+
+  43% { transform: rotate(0); }
+  100% { transform: rotate(0); }
+}
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus
+{
+    background-color: #e1e7f3;
+}
+
+.dropdown-menu {
+    right: unset;
+    min-width: 140px !important;
+}

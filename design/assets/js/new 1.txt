@@ -1,0 +1,123 @@
+<div class="container">
+   <br><br>
+    <div class="row">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-2">
+المهمه
+    </div>
+    
+    <div class="col-lg-8">
+ <input type="text" class="form-control">
+    </div>
+      <div class="col-lg-1"></div>
+    
+ <br>
+    
+    <div class="col-lg-1"></div>
+    <div class="col-lg-2">
+النوع
+    </div>
+    
+    <div class="col-lg-8">
+ <input type="text" class="form-control">
+    </div>
+      <div class="col-lg-1"></div>
+    
+  <br>
+    <div class="col-lg-1"></div>
+    <div class="col-lg-2">
+الوصف
+    </div>
+    
+    <div class="col-lg-8">
+ <input type="text" class="form-control">
+    </div>
+      <div class="col-lg-1"></div>
+    
+   <br>
+    
+    <div class="col-lg-1"></div>
+    <div class="col-lg-2">
+المكان
+    </div>
+    
+    <div class="col-lg-8">
+ <input type="text" class="form-control">
+    </div>
+      <div class="col-lg-1"></div>
+    
+   <br>
+    
+    <div class="col-lg-1"></div>
+    <div class="col-lg-2">
+تاريخ الانشاء 
+    </div>
+    
+    <div class="col-lg-8">
+ <input type="text" class="form-control">
+    </div>
+      <div class="col-lg-1"></div>
+    
+   <br>
+    
+    <div class="col-lg-1"></div>
+    <div class="col-lg-2">
+تاريخ الاستحقاق
+    </div>
+    
+    <div class="col-lg-8">
+ <input type="text" class="form-control">
+    </div>
+      <div class="col-lg-1"></div>
+    
+  <br>
+    
+    <div class="col-lg-1"></div>
+    <div class="col-lg-2">
+المشرف
+    </div> 
+    
+    <div class="col-lg-8">
+ <input type="text" class="form-control">
+    </div>
+      <div class="col-lg-1"></div>
+    
+   <br>
+    
+    <div class="col-lg-1"></div>
+    <div class="col-lg-2">
+ملاحظات 
+    </div>
+    
+    <div class="col-lg-8">
+ <input type="text" class="form-control">
+    </div>
+      <div class="col-lg-1"></div>
+   
+   <br>
+    
+    <div class="col-lg-1"></div>
+    <div class="col-lg-2">
+الموسم
+    </div>
+    
+    <div class="col-lg-8">
+ <input type="text" class="form-control">
+    </div>
+      <div class="col-lg-1"></div>
+    
+ <br>
+    <div class="col-lg-1"></div>
+    <div class="col-lg-2">
+تنفيذ بواسطة
+    </div>
+    
+    <div class="col-lg-8">
+ <input type="text" class="form-control">
+    </div>
+      <div class="col-lg-1"></div>
+    
+  <br><br>
+
+  </div>
+</div>

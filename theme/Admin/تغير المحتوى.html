@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="arabic" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Neon Admin Panel" />
+    <meta name="author" content="" />
+   	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/font-icons/entypo/css/entypo.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/bootstrap.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/neon-core.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/neon-theme.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/neon-forms.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/neon-rtl.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/c3.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/custom.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/esraaStyle.css">
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/css/madonaStyle.css">
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/jquery-1.11.0.min.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/mainScript.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/calltable.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/jquery-ui.min.js"></script>
+
+
+
+</head>
+
+
+
+<body class="page-body" data-url="http://neon.dev">
+
+    <div class="page-container right-sidebar">
+       
+
+            <div class="sidebar-menu">
+
+
+         	<header class="logo-env">
+				<div class="logo">
+					<a href="layout-right-sidebar.html">
+					<img src="http://173.212.198.28:8010/crm/design/assets/images/quantum logo-01.png" width="170px" height="100px" alt="" />
+				</a>
+				</div>
+				<div class="sidebar-collapse">
+					<a href="#" class="sidebar-collapse-icon with-animation">
+							<i class="entypo-menu"></i>
+						</a>
+				</div>
+
+				<div class="sidebar-mobile-menu visible-xs">
+					<a href="#" class="with-animation">
+							
+							<i class="entypo-menu"></i>
+						</a>
+				</div>
+
+			</header>
+
+				<ul id="main-menu" class="">
+
+				<li> <a href="التقويم.html"> 					<i class="entypo-calendar"></i> 					<span>التقويم</span> 				</a> </li>
+				<li class="opened active">
+					<a href="التنبيهات.html"> 					<i class="entypo-alert"></i> 					<span>تنبيهات</span> 					<span class="badge badge-secondary">8</span> 				</a>					</li>
+				<li> <a href="ui-panels.html"> 					<i class="entypo-newspaper"></i> 					<span>المهام</span> 				</a>
+					<ul>
+						<li id="opener"> <a href="#"> 							<i class="entypo-attach"></i> 							<span>رفع ملف</span> 						</a> </li>
+						<li> <a href="تعيين-مهام.html"> 							<span>تعيين مهام</span> 						</a> </li>
+						<div id="dialog" title="اضافة ملف">
+							<h5>تحميل ملف</h5>
+
+
+							<div class="modal-body">
+								<input type="file" class="form-control fileupload">
+							</div>
+						</div>
+					</ul>
+				</li>
+				<li> <a href="الموظفين.html"> 					<i class="entypo-users"></i> 					<span>موظفين</span> 				</a> </li>
+				<li> <a href="الصلاحيات.html"> 					<i class="entypo-users"></i> 					<span>المجموعات</span> 				</a> </li>
+				<li> <a href="العملاء.html"> 				<i class="entypo-users"></i> 					<span>عملاء</span> 				</a> </li>
+				<li> <a href="الرسائل.html"> 				<i class="entypo-comment"></i> 					<span>رسائل</span> 				</a> </li>
+				<li> <a href="الايميلات.html"> 					<i class="entypo-mail"></i> 					<span>ايميل</span> 				</a> </li>
+				<li> <a href="تعليمات.html "> 				 					<span>تعليمات</span> 					 				</a> </li>
+				<li> <a href="الشكاوى.html"> 					 					<span>شكاوي</span> 				</a> </li>
+				<li> <a href="#"> 				 					<span>الاعدادات</span> 				</a>
+					<ul>
+						<li> <a href="الحجوزات.html"> 							<i class="entypo-pencil"></i> 							<span>حجوزات</span> 						</a> </li>
+						<li> <a href="#"> 							<i class="entypo-database"></i> 							<span>قاعدة البيانات</span> 						</a> </li>
+						<li> <a href="تغير المحتوى.html"> 							<i class="entypo-database"></i> 							<span>تغير المحتوى</span> 						</a> </li>
+						<li> <a href="قاعدة البيانات.html"> 							<i class="entypo-book-open"></i> 							<span>بيانات الشركة</span> 						</a>							</li>
+					</ul>
+				</li>
+			</ul>
+
+
+            </div>
+ 		<div class="top-header">
+
+
+			<div class="col-md-4 col-sm-4 clearfix">
+
+				<div class="pull-left pull-right-xs pull-none-xsm headertitle ">
+					<h4>  تغيير المحتوى</h4>
+				</div>
+
+			</div>
+			<div class="col-md-4 col-sm-4 clearfix hidden-xs time-date">
+				<span id="date_time"></span>
+				<script type="text/javascript">
+					window.onload = date_time('date_time');
+				</script>
+			</div>
+
+			<div class="col-md-4 col-sm-4 clearfix user-crm">
+
+				<ul class="user-info pull-right pull-none-xsm">
+
+					<!-- Profile Info -->
+					<li class="profile-info dropdown">
+						<!-- add class "pull-right" if you want to place this from right -->
+
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+   <i class="entypo-user"></i>
+
+   <span>احمد محمود</span> 
+					
+				</a>
+
+						<ul class="dropdown-menu edropdown">
+
+							<!-- Reverse Caret -->
+							<li class="caret"></li>
+
+							<!-- Profile sub-links -->
+							<li>
+								<a href="بيانات_الموظف.html">
+							<i class="entypo-user"></i>
+							بيانات المستخدم
+						</a>
+							</li>
+
+							<li>
+								<a href="تعديل_البيانات.html">
+							<i class="entypo-mail"></i>
+							تعديل البيانات
+						</a>
+							</li>
+
+							<li>
+								<a href="extra-login.html">
+							<i class="entypo-calendar"></i>
+							خروج
+						</a>
+							</li>
+
+
+						</ul>
+					</li>
+				</ul>
+
+
+			</div>
+
+
+
+
+		</div>
+
+        <div class="main-content">
+
+
+            <div class="row">
+                <div class="col-sm-12">
+
+
+                    <ul class="nav nav-tabs bordered">
+                        <!-- available classes "bordered", "right-aligned" -->
+                        <li class="active">
+                            <a href="#home" data-toggle="tab">
+                                <span>تغير المحتوى</span>
+                                <span class="badge badge-secondary">8</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#profile" data-toggle="tab">
+                                <span>الوقت</span>
+                                <span class="badge badge-secondary">3</span>
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#profile2" data-toggle="tab">
+                                <span>حالات المكالمات</span>
+                                <span class="badge badge-secondary">3</span>
+
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="home">
+
+                            <table id="myTable" class="table table-striped">
+
+                                <thead>
+
+                                    <tr>
+                                        <th>المحتوى</th>
+
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+
+                                        <td id="td-id-td">
+                                            <span>Doe</span>
+
+                                            <a id="td-id" class="btn btn-blue btn-sm icon-left reemedit">تعديل </a>
+                                        </td>
+
+
+                                    </tr>
+                                    <tr>
+
+                                        <td id="td-id-td">
+                                            <span>Doe</span>
+
+                                            <a id="td-id" class="btn btn-blue btn-sm icon-left reemedit">تعديل </a>
+
+                                        </td>
+
+
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+
+                        </div>
+                        <div class="tab-pane" id="profile">
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <label for="field-1" class="col-sm-4 control-label">الوقت الافتراضى لمتابعة المكالمة
+                                        </label>
+
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" id="field-1" placeholder="الوقت">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <label for="field-1" class="col-sm-4 control-label">عدد حروف الرسائل</label>
+
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" id="field-1" placeholder="العدد">
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane" id="profile2">
+                            <div class="row">
+
+                                <span>أضافه حالة رئسية</span>
+                                <input type="text" class="statuename">
+                                <button type="button" class="btn btn-success add-main-statue">+ اضافة</button>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 cases main-statue-content">
+                                </div>
+
+                                <div class="col-md-6 cases main-statue-content-sub">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- Button trigger modal -->
+
+
+            <!-- Modal -->
+
+
+            <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"></h5>تعيين موظف اّخر</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <div class="es-radio1">
+                                        <p>اعادة التعيين الى:</p>
+                                        <input type="radio" name="optradio" class="radio-inline" id="radio1">
+                                        <select id="sel1" class="esradio">
+                                            <option>المشرفين</option>
+                                            <option>مشرف1</option>
+                                            <option>مشرف2</option>
+                                            <option>مشرف3</option>
+                                        </select>
+
+                                        <input type="radio" name="optradio" class="radio-inline" id="radio2">
+                                        <select id="sel2">
+                                            <option>الموظفين</option>
+                                            <option>موظف1</option>
+                                            <option>موظف2</option>
+                                            <option>موظف3</option>
+                                        </select>
+                                        <div class="estime">
+                                            <input type="date" class="datepicker">
+                                            <span class="entypo-calendar"></span>
+                                            <input id="time" type="time">
+                                            <span class="entypo-clock"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message-text" class="col-form-label">ملاحظات:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">اغلاق</button>
+                            <button type="button" class="btn btn-primary">ارسال</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="modal fade" id="edit-main-statue">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">تعديل الحالة رقم 1</h4>
+                        </div>
+
+                        <div class="modal-body">
+
+                            <label>اسم الحالة المعدلة</label>
+                            <input class="editvalue" data-id="" type="text" name="">
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">إلغاء</button>
+                            <button type="button" class="btn btn-info update" data-dismiss="modal">تعديل</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="modal fade" id="add-sub-statue">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">الحالة رقم 1</h4>
+                        </div>
+
+                        <div class="modal-body">
+                            <div>اضافة حالة فرعية</div>
+                            <label>اسم الحالة</label>
+                            <input class="add-input editsubvalue" type="text" name="">
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default " data-dismiss="modal">إلغاء</button>
+                            <button type="button" class="btn btn-info addsubvalue" data-dismiss="modal">أضافة</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="edit-sub-statue">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">تعديل الحالة الفرعية</h4>
+                        </div>
+
+                        <div class="modal-body">
+
+                            <label>اسم الحالة الفرعية</label>
+                            <input class="editsubvalue" value="" data-parentid="" data-id="" type="text" name="">
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">إلغاء</button>
+                            <button type="button" class="btn btn-info update-sub" data-dismiss="modal">تعديل</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="modal fade" id="modal-3">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">ffffff</h4>
+                        </div>
+
+                        <div class="modal-body">
+                            <form action="">
+                                <input type="radio" name="gender" value="male"> حجز
+                                <br>
+                                <input type="radio" name="gender" value="female"> تعليق
+                                <br>
+                                <input type="radio" name="gender" value="other"> موعد اخر
+                            </form>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">الغاء</button>
+                            <button type="button" class="btn btn-info" data-dismiss="modal">اضافة</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    </div>
+    </div>
+
+
+    <script type="text/javascript">
+        // Code used to add Todo Tasks
+        jQuery(document).ready(function ($) {
+            var $todo_tasks = $("#todo_tasks");
+
+            $todo_tasks.find('input[type="text"]').on('keydown', function (ev) {
+                if (ev.keyCode == 13) {
+                    ev.preventDefault();
+
+                    if ($.trim($(this).val()).length) {
+                        var $todo_entry = $(
+                            '<li><div class="checkbox checkbox-replace color-white"><input type="checkbox" /><label>' + $(this).val() +
+                            '</label></div></li>');
+                        $(this).val('');
+
+                        $todo_entry.appendTo($todo_tasks.find('.todo-list'));
+                        $todo_entry.hide().slideDown('fast');
+                        replaceCheckboxes();
+                    }
+                }
+            });
+
+            $('#myTable').DataTable(
+                {
+                    responsive: true
+                }
+            );
+
+
+        });
+
+        /* deleteFunction */
+
+
+        $(document).on("click", "#td-id", function () {
+
+
+            var OriginalContent = $(this).parent("td").find("span").text();
+
+            var inputNewText = prompt("Enter new content for:", OriginalContent);
+
+            if (inputNewText != null) {
+                $(this).parent("td").find("span").text(inputNewText);
+            }
+
+
+        });
+
+
+    </script>
+
+
+    <!-- Footer -->
+
+    </div>
+
+
+    </div>
+
+	<link rel="stylesheet" href="http://173.212.198.28:8010/crm/design/assets/js/jvectormap/jquery-jvectormap-1.2.2.css">
+
+
+	<!-- Bottom Scripts -->
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/gsap/main-gsap.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/bootstrap.js"></script>
+
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/joinable.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/resizeable.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/neon-api.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/jvectormap/jquery-jvectormap-europe-merc-en.js"></script>
+<script src="http://173.212.198.28:8010/crm/design/assets/js/bootstrap-datepicker.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/raphael-min.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/morris.min.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/toastr.js"></script>
+
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/jquery.dataTables.min (2).js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/neon-custom.js"></script>
+	<script src="http://173.212.198.28:8010/crm/design/assets/js/neon-demo.js"></script>
+ 
+    <script>
+        $(document).on("mouseover", ".item", function () {
+
+
+            $(".item").hover(function () {
+                // $(this).css("background-color", "yellow");
+                $(this).find(".extra-icons").css({ display: "block" });
+            }, function () {
+                $(this).find(".extra-icons").css({ display: "none" });
+                // $(this).css("background-color", "pink");
+            });
+
+
+        });
+
+    </script>
+    <script>
+        $(document).ready(function () {
+
+
+            var statue = [
+                {
+                    statuename: "first statue name",
+                    children: [
+                        {
+                            statuename: "first sub statue name",
+                            children: []
+                        }
+                    ]
+                },
+                {
+                    statuename: "second  statue name",
+                    children: [
+                        {
+                            statuename: "second sub statue name",
+                            children: []
+                        }
+                    ]
+                }
+
+            ];
+            updatecontent();
+            updatesubcontent();
+            showSubContentbyMainStatue(0);
+
+
+
+            $(document).on("click", ".add-main-statue", function () {
+
+                for (const k in statue) {
+                    console.log(statue[k].statuename);
+                    if (statue[k].statuename == $(".statuename").val()) {
+                        return false;
+                    }
+                }
+                var newstatuename = {
+                    statuename: $(".statuename").val(),
+                    children: []
+                }
+                statue.push(newstatuename);
+                console.log(statue);
+                updatecontent();
+            });
+
+            //////// open modal for edit main statue ////////
+            $(document).on("click", ".edit", function () {
+
+                var id = $(this).attr("data-id");
+                $('.editvalue').attr("data-id", id);
+                $('.editvalue').val(statue[id].statuename);
+
+            });
+
+            ////////////// Edit main statue value /////////
+            $(".update").on("click", function () {
+
+                var id = $('.editvalue').attr("data-id");
+                console.log(id);
+                var newdata = $('.editvalue').val();
+                console.log(newdata);
+                statue[id].statuename = newdata;
+                console.log(statue);
+                $('.editvalue').val("");
+                updatecontent();
+
+            });
+
+            ///////// Delete Main Statue //////////////
+            $(document).on("click", ".delete", function () {
+
+                var id = $(this).attr("data-id");
+                console.log(id);
+                delete statue[id];
+                $(this).parent().remove();
+
+                statue = statue.filter(function (item) {
+                    console.log(item);
+                    return item !== undefined;
+                });
+                updatecontent();
+
+            });
+
+            ///////// Delete Sub Statue //////////////
+            $(document).on("click", ".delete-sub", function () {
+                var id = $(this).attr("data-id");
+                var parentid = $(this).attr("data-parentid");
+
+
+                var r = confirm("سيتم حذف الحالة الفرعية .. هل أنت متأكد !؟");
+                if (r == true) {
+                    delete statue[parentid].children[id];
+                    $(this).parent('main-statue-sub').remove();
+
+                    statue = statue.filter(function (item) {
+                        console.log(item);
+                        item.children = item.children.filter(function (subitem) {
+                            return subitem !== undefined;
+                        });
+                        return item !== undefined;
+                    });
+                    console.log(statue);
+
+                    updatesubcontent();
+
+                } else {
+                    return;
+                }
+
+                console.log(id);
+                console.log(parentid)
+
+
+            });
+
+
+
+            $(document).on("click", ".edit-sub", function () {
+
+                //get parent id
+                var parentId = $(this).attr("data-parentid");
+                //get sub id
+                var subId = $(this).attr("data-id");
+                //get value of sub id
+                var oldValueOfSubId = statue[parentId].children[subId].statuename;
+                //set value of form input field to be value of sub
+                $('#edit-sub-statue .editsubvalue').val(oldValueOfSubId);
+                //add data parent id to the input field
+                $('#edit-sub-statue .editsubvalue').attr("data-id", subId);
+                //add data sub id to the input field
+                $('#edit-sub-statue .editsubvalue').attr("data-parentid", parentId);
+
+            });
+            ////// Update Main Statue /////////
+            $(document).on("click", ".update-sub", function () {
+
+                //get parent id
+                var parentId = $("#edit-sub-statue .editsubvalue").attr("data-parentid");
+                console.log(parentId);
+                //get sub id
+                var subId = $("#edit-sub-statue .editsubvalue").attr("data-id");
+                console.log(subId);
+
+                //get value of sub id
+                var newvalue = $("#edit-sub-statue .editsubvalue").val();//statue[parentId].children[subId].statuename;
+                console.log(newvalue);
+
+
+                statue[parentId].children[subId].statuename = newvalue;
+                console.log(statue);
+                $('.editvalue').val("");
+                showSubContentbyMainStatue(parentId);
+
+            });
+
+
+            function updatecontent() {
+                $('.main-statue-content').html("");
+
+                var i = 0
+                for (const k in statue) {
+
+                    var mainStatue = '<div class="row item main-statue" ><div class="col-sm-8 "><div class="first-case">';
+                    mainStatue += '<span class="name">' + statue[k].statuename + '</span>';
+                    mainStatue += "<a href='#' class='btn btn-success add'  data-toggle='modal' data-target='#add-sub-statue'  data-id='" + k + "' >+</a>";
+                    mainStatue += " <button type='button' href='#' data-toggle='modal' data-target='#modal-3' class='btn btn-success done' >&#10004; </button>";
+                    mainStatue += ' </div></div><div class="col-sm-4"><div class="extra-icons"><a href="#" data-id="' + k + '"  data-toggle="modal" data-target="#edit-main-statue"  class="btn btn-blue btn-sm icon-left edit"> <i class="entypo-pencil"></i></a>';
+                    mainStatue += ' <a href="#" class="btn btn-danger btn-sm icon-left delete" data-id="' + k + '""><i class="entypo-cancel"></i><span></span> </a></div></div></div>';
+                    $(mainStatue).appendTo('.main-statue-content');
+                }
+            };
+
+            function updatesubcontent() {
+                $('.main-statue-content-sub').html("");
+                for (const parentID in statue) {
+                    for (const subID in statue[parentID].children) {
+
+                        var mainStatue = '<div class="main-statue-sub row item" data-level="2"><div class="col-sm-8"><div class="second-case">';
+                        mainStatue += '<span class="name">' + statue[parentID].children[subID].statuename + '</span>';
+                        mainStatue += " <button type='button' href='#' data-toggle='modal' data-target='#modal-3' class='btn btn-success done' >&#10004; </button>";
+                        mainStatue += ' </div></div><div class="col-sm-4"><div class="extra-icons"><a href="#" data-parentid="' + parentID + '" data-id="' + subID + '"  data-toggle="modal" data-target="#edit-sub-statue"  class="btn btn-blue btn-sm icon-left edit-sub"> <i class="entypo-pencil"></i></a>';
+                        mainStatue += ' <a href="#" class="btn btn-danger btn-sm icon-left delete-sub" data-parentid="' + parentID + '" data-id="' + subID + '" ><i class="entypo-cancel"></i><span></span> </a></div></div></div>';
+                        $(mainStatue).appendTo('.main-statue-content-sub');
+
+                    }
+                }
+            };
+
+
+
+            function showSubContentbyMainStatue(parentID) {
+                $('.main-statue-content-sub').html("");
+
+                for (const subID in statue[parentID].children) {
+                    var mainStatue = '<div class="main-statue-sub row item" data-level="2"><div class="col-sm-8"><div class="second-case">';
+                    mainStatue += '<span class="name">' + statue[parentID].children[subID].statuename + '</span>';
+                    mainStatue += " <button type='button' href='#' data-toggle='modal' data-target='#modal-3' class='btn btn-success done' >&#10004; </button>";
+                    mainStatue += ' </div></div><div class="col-sm-4"><div class="extra-icons"><a href="#" data-parentid="' + parentID + '" data-id="' + subID + '"  data-toggle="modal" data-target="#edit-sub-statue"  class="btn btn-blue btn-sm icon-left edit-sub"> <i class="entypo-pencil"></i></a>';
+                    mainStatue += ' <a href="#" class="btn btn-danger btn-sm icon-left delete-sub" data-parentid="' + parentID + '" data-id="' + subID + '" ><i class="entypo-cancel"></i><span></span> </a></div></div></div>';
+                    $(mainStatue).appendTo('.main-statue-content-sub');
+
+                }
+            };
+
+
+
+            $(document).on("click", ".first-case", function () {
+                var parentID = $(this).find('.add').attr('data-id');
+                $('.main-statue-content-sub').html("");
+                for (const subID in statue[parentID].children) {
+
+                    var mainStatue = '<div class="main-statue-sub row item" data-level="2"><div class="col-sm-8"><div class="second-case">';
+                    mainStatue += '<span class="name">' + statue[parentID].children[subID].statuename + '</span>';
+                    mainStatue += " <button type='button' href='#' data-toggle='modal' data-target='#modal-3' class='btn btn-success done' >&#10004; </button>";
+                    mainStatue += ' </div></div><div class="col-sm-4"><div class="extra-icons"><a href="#" data-parentid="' + parentID + '" data-id="' + subID + '"  data-toggle="modal" data-target="#edit-sub-statue"  class="btn btn-blue btn-sm icon-left edit-sub"> <i class="entypo-pencil"></i></a>';
+                    mainStatue += ' <a href="#" class="btn btn-danger btn-sm icon-left delete-sub" data-parentid="' + parentID + '" data-id="' + subID + '" ><i class="entypo-cancel"></i><span></span> </a></div></div></div>';
+                    $(mainStatue).appendTo('.main-statue-content-sub');
+
+                }
+                $('.first-case').removeClass('active');
+                    $(this).addClass('active');
+
+            })
+
+
+            $(document).on("click", ".add", function () {
+                var id = $(this).attr("data-id");
+                $('.add-input').attr("data-id", id)
+            });
+
+            ///////////// Add Sub Statue //////
+            $(document).on("click", ".addsubvalue", function () {
+                var id = $('.add-input').attr("data-id");
+                var newValue = $('.add-input').val();
+                console.log(id)
+                var newstatuename = {
+                    statuename: newValue,
+                    children: []
+                }
+                statue[id].children.push(newstatuename);
+                statue[id].find('.first-case').addClass('active')
+                // statue[id]=[];
+                // statue[id][] = newValue;
+                console.log(statue)
+                $('.add-input').val("");
+                updatecontent();
+                statue[id].find('.first-case').addClass('active')
+
+                showSubContentbyMainStatue(id);
+            });
+        
+
+
+        })
+
+
+    </script>
+
+
+</body>
+
+</html>

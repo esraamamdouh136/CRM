@@ -1,0 +1,119 @@
+<html lang="arabic" dir="rtl">
+<head>
+<link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.0.0/css/bootstrap.min.css" integrity="sha384-P4uhUIGk/q1gaD/NdgkBIl3a6QywJjlsFJFk7SPRdruoGddvRVSwv5qFnvZ73cpz" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/jquery.paginate.css">
+   <link rel="stylesheet" href="css/zadna-str.css">
+     <link rel="stylesheet" href="css/fa-svg-with-js.css">
+</head>
+<body>
+<div class="row m-4">
+
+                <div class="form-group  col-sm-3 col-md-3 col-lg-3">
+
+                  <label>المنتج</label>
+
+                  <select class="companyname form-control" required id="new_row">
+
+                    <option selected disabled="disabled">Select Row</option>
+                    <option >منتج 1</option>
+                    <option >منتج2</option>
+                    <option >منتج3</option>
+                    
+
+                  </select>
+
+                </div>
+				  <div class="form-group  col-sm-3 col-md-3 col-lg-3">
+
+                  <label>الكمية</label>
+
+				  <input type="number" class="companyname form-control" required id="new_row1">
+               
+
+                </div>
+                <div class="form-group  col-sm-3 col-md-3 col-lg-3">
+                <br /> 
+                  <button class="btn btn-default add-row"  type="submit">اضافة</button>
+                </div>
+  
+
+              </div>
+                  <table class="table table-striped table-bordered table-hover orderTable actionBtn zadnatable">
+
+                    <thead>
+
+                    <tr>
+
+                      <th></th>
+
+                      <th>اسم المنتج</th>
+
+                      <th>الكمية</th>
+                    
+
+                      <th>العمليات</th>
+
+                    </tr>
+
+                    </thead>
+
+                    <tbody>
+                    <tr class="demorow">
+                      <td >1</td>
+                      <td class="edit-td"   contenteditable=false>منتج1</td>
+                      <td class="edit-td"   contenteditable=false >23</td>
+                     
+  <td><button class="btn btn-default deleterow" type="submit">مسح</button>
+  <i class="fas fa-edit edit2" title="تعديل" data-toggle="modal" data-target="#EditTypeModal"></i>
+  </td>
+                    </tr>
+                    </tbody>
+
+                  </table>
+<script src=" https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.rtlcss.com/bootstrap/v4.0.0/js/bootstrap.min.js" integrity="sha384-54+cucJ4QbVb99v8dcttx/0JRx4FHMmhOWi4W+xrXpKcsKQodCBwAvu3xxkZAwsH" crossorigin="anonymous"></script>
+<script src="js/jquery.paginate.js"></script>
+  <script src="js/fontawesome-all.min.js"></script>
+   
+
+    <script src="js/Taction.js"></script>
+				<script>
+				   $(".add-row").click(function () {
+        $(".demorow").remove();
+        var $this = $("table tbody");
+        var incremented = $this.find('td[rowspan]:last').text() * 1 + 1;
+        var rowname = $("#new_row").val();
+		var rowname2=$("#new_row1").val();
+        var markup = '<tr><td rowspan="" >' + incremented + '</td><td class="edit-td"  contenteditable=false> ' + rowname + '</td><td class="edit-td"  contenteditable =false>' + rowname2;
+        markup += '</td><td><button class="btn btn-default deleterow" type="submit">مسح</button>  <i class="fas fa-edit edit2" title="تعديل" data-toggle="modal" data-target="#EditTypeModal"></i></td> </tr>';
+        $("table tbody").append(markup);
+		$this.data('paginate').kill();
+        $this.paginate({'perPage': 5});
+    });
+
+    $('table tbody').on('click', '.deleterow', function () {
+         $(this).closest('tr').remove();
+		  $("table tbody").data('paginate').kill();
+       $("table tbody").paginate({'perPage': 5});
+    });
+
+ 
+   $(document).on("click",'.edit2',function()  
+       {
+              
+           if($(this).hasClass('fa-edit'))
+               {
+                 $(this).closest('tr').find(".edit-td").attr('contenteditable',true);
+           $(this).removeClass('fa-edit').addClass('fa-save');
+             
+               } else if($(this).hasClass('fa-save'))
+            {
+                  $(this).closest('tr').find(".edit-td").attr('contenteditable',false);
+          $(this).removeClass('fa-save').addClass('fa-edit');
+            }
+           
+       });
+ 
+				  </script>
+</body>
+</html>

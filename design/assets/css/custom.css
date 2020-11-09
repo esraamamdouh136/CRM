@@ -1,0 +1,89 @@
+body{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+        @font-face {
+    font-family: "GE SS Two Light";
+    src: url("../fonts/GE_SS_Two_Light.eot?") format("eot"), url("fonts/GE_SS_Two_Light.woff") format("woff"), url("fonts/GE_SS_Two_Light.ttf") format("truetype"), url("fonts/GE_SS_Two_Light.svg#GESSTwoLight-Light") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "GE-SS-med";
+    src: url("../fonts/ge-ss-med.woff") format("woff");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "GE SS Two Medium";
+    src: url('../fonts/GE_SS_Two_Medium.woff') format('woff'), url('fonts/GE_SS_Two_Medium.ttf') format('truetype'), url('fonts/GE_SS_Two_Medium.svg#ge_ss_twomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+@media only screen and (min-width: 900px) {
+body { 
+       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: normal;
+   
+ }
+
+    
+    .page-container .main-content {
+
+padding-left: 90px;
+    padding-right: 90px;
+
+}
+}
+
+
+
+
+.page-container .sidebar-menu #main-menu li {
+   
+    font-size: 20px !important;
+}
+.page-container .sidebar-menu #main-menu li a span {
+
+    color: black }
+	
+	
+	
+	
+	
+	
+.top-header{
+       height: 70px;
+    color: #795548;
+    padding: 16px;
+  
+    background: #f1f4fede;
+    background: linear-gradient(to left, rgba(255,0,0,0), rgb(231, 236, 253));
+}
+.profile-info.dropdown > a {
+       color: #532311;
+}
+
+.page-container .main-content {
+/*    padding: 90px;*/
+
+
+}
+.form-control {
+    border: 1px solid black;
+
+/*    height: 49px;*/}
+.form-group {
+   
+   color: black;
+}
+.fileinput {
+   
+    margin-bottom: 48px;}
+
+
+.es-radio {
+    margin-right: 16% !important;
+}
